@@ -1,0 +1,163 @@
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 26px;
+  font-weight: 100;
+  font-style: italic;
+  color: black;
+  background-color: #dbd4d4
+}
+
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1400px;
+    padding: 0 100px;
+}
+
+/* Настройка фото после шапки страницы */
+.q1 img {
+    display: block;
+    margin: 0 auto;
+    width: 900px; /* Задаем фиксированную ширину */
+    height: 900px; /* Задаем фиксированную высоту */
+}
+
+.q1 h2 { 
+    text-align: center; /*выравниваем текст заголовка по центру*/
+    margin-top: 150px; /*добавляем отступ сверху от изображения*/
+    font-style: oblique; /*делаем текст курсивом(italic курсив),(oblique другой стиль)*/
+}
+
+/* также работаем с дочернеми элементами добавляем отступ от слово "специальности" */
+.flex h2 {
+    margin-top: 90px; /* Добавляем отступ сверху */
+}
+
+
+/* задаем размер дочерним элементам (фотографиям)*/
+.flex__container img {
+    width: 800px; /* Задаем фиксированную ширину */
+    height: 500px; /* Задаем фиксированную высоту */
+}
+
+
+/* Настройка шапки сайта*/
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+    background-color: #93ceca;
+    border-radius: 25px;
+    margin-top: 25px;
+}
+
+.container {
+    max-width: 1400px;
+    padding: 0 100px;
+    margin: 0 auto /* выравнивание по центру*/
+}
+
+.logo img {
+    display: block;
+    width: 500px;
+    height: 200px;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px; /* Уменьшаем расстояние между кнопками */
+    padding: 0; /* Убираем отступы внутри списка */
+    margin: 0; /* Убираем внешние отступы */
+}
+
+nav ul li {
+    list-style: none; /* Убираем маркеры списка */
+}
+
+nav ul li a.styled-link {
+    display: inline-block;
+    padding: 3px 15px; /* Уменьшаем отступы внутри кнопки */
+    font-size: 20px; /* Уменьшаем размер текста */
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    background-color: azure;
+    border: 2px solid #93ceca;
+    border-radius: 15px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+nav ul li a.styled-link:hover {
+    background-color: rgb(29, 104, 104);
+    border-color: rgb(29, 104, 104);
+}
+
+
+.auth button {
+    outline: none;
+    border: none;
+    background-color: rgb(29, 104, 104);
+    color: azure;
+    border-radius: 15px;
+    padding: 25px;
+    margin-right: 25px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.auth button:hover {
+    background-color: #0056b3; /* Цвет фона при наведении */
+    border-color: #0056b3; /* Цвет границы при наведении */
+}
+
+
+.info__text {
+    min-height: 100vh;
+    border-radius: 25px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* настройка дизайна кнопок*/
+.styled-link {
+    display: inline-block;
+    padding: 10px 20px; /* Размер отступов внутри кнопки */
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff; /* Цвет текста */
+    background-color: #93ceca; /* Цвет фона */
+    border: 2px solid #dbd4d4; /* Толщина и цвет границы */
+    border-radius: 5px; /* Скругление углов */
+    transition: background-color 0.3s, border-color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+/* выбираем цвет при наведении "Подробнее про специальность....."*/
+.styled-link:hover {
+    background-color: rgb(29, 104, 104); /* Цвет фона при наведении */
+    border-color: rgb(29, 104, 104); /* Цвет границы при наведении */
+}
+
+.logo img {
+    /* Начальные стили логотипа */
+    opacity: 0; /* Устанавливаем начальную прозрачность */
+    transform: translateY(-20px); /* Смещаем логотип вверх на 20px */
+    transition: opacity 5s ease, transform 1s ease; /* Добавляем переходные эффекты для плавности анимации */
+    }
+    
+    .logo img.logo-animation {
+    /* Анимация логотипа */
+    opacity: 1; /* Устанавливаем полную прозрачность */
+    transform: translateY(0); /* Возвращаем логотип в его исходное положение */
+    }

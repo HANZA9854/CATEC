@@ -1,0 +1,29 @@
+@media screen and (max-width: 1550px) {
+    .header__top {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    nav ul li a {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .header__top {
+        flex-direction: row;
+    }
+
+    a .q12 {
+        color: black;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav,
+    .auth {
+        display: none;
+    }
+    
+}
